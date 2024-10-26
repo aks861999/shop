@@ -11,10 +11,11 @@ app = FastAPI()
 @app.get('/sweaters')
 async def get_sweaters():
 
-    '''
+    
     
     sheet_url = 'https://docs.google.com/spreadsheets/d/1pm2eBiux4l9Z-3P1eSAinP5NJ7v3v7YfpVFRfVW3rPA/gviz/tq?tqx=out:json&sheet=sweater'
     response = requests.get(sheet_url)
+    '''
     print(response.status_code)
 
     data = []
