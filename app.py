@@ -4,7 +4,6 @@ import requests
 import json
 import uvicorn
 
-
 app = FastAPI()
 
 # Function to fetch fresh data from Google Sheets
