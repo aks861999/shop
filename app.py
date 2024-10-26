@@ -48,7 +48,7 @@ async def get_sweaters():
     
     '''
     if data:
-        return "yes there some data ---->>> JSONResponse(content=data)"
+        return JSONResponse(content=data)
     else:
-        return "no data ------->>>>>>>>>>> HTTPException(status_code=500, detail="
+        raise HTTPException(status_code=500, detail="Failed to fetch data")
     
